@@ -1,0 +1,498 @@
+<!-- [ START ] "src/includes/html.html" -->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- [  END  ] "src/includes/html.html" -->
+<!-- [ START ] "src/includes/head.html" -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Component - Posted County Prices</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/pcp.min.css" media="all">
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shiv.js"></script>
+  <script src="js/vendor/respond.js"></script>
+  <script src="js/vendor/selectivizr-min.js"></script>
+  <script src="js/vendor/rem.min.js"></script>
+  <![endif]-->
+</head>
+<!-- [  END  ] "src/includes/head.html" -->
+<body class="pcp-app">
+  <!-- [ START ] "src/includes/fsa-browser-upgrade.html" -->
+  <!--[if lt IE 10]><p class="fsa-browser-upgrade">You are using an <strong>outdated</strong> browser. Please <strong><a href="http://browsehappy.com/">upgrade your browser</a></strong> or contact your IT department to obtain a secure and improved experience.</p><![endif]-->
+  <!-- [  END  ] "src/includes/fsa-browser-upgrade.html" -->
+  <!-- [ START ] "src/includes/skipnav.html" --><a class="skipnav" href="#main-content">Skip to main content</a>
+  <!-- [  END  ] "src/includes/skipnav.html" -->
+  <header>
+    <!-- [ START ] "src/includes/pcp-header-project.html" -->
+    <div class="pcp-header-TEMP pcp-header-TEMP--project">
+      <div class="pcp-header-TEMP__bd">
+        <a href="index.html">PCP-II Prototype</a>
+      </div>
+    </div>
+    <!-- [  END  ] "src/includes/pcp-header-project.html" -->
+  </header>
+  <main id="main-content" tabindex="-1">
+    <div class="pcp-section">
+      <div class="pcp-section__bd">
+        <h1>Component: Select Multi</h1>
+        <p class="fsa-text--lead">Effectively a replacement for <code>&lt;select <strong style="color:black">multiple</strong>&gt;...&lt;/select&gt;</code>, though far more user-friendly as select multiple requires users to Ctrl (or Cmd) click.</p>
+        <pre class="pcp-code-block"><code>class="<strong style="color:black;">fsa-select-multi</strong>"</code></pre>
+        <div class="fsa-grid">
+          <div class="fsa-grid__1/1 fsa-grid__1/2@m">
+            <h2 class="pcp-prototype-title">As seen on</h2>
+            <ul>
+              <li><a href="settings_commodities.html">settings_commodities.html</a> (Click "Add" button)</li>
+              <li><a href="settings_thing__detail.html">settings_commodities.html</a> (Click "California Central Coast" button)</li>
+            </ul>
+          </div>
+          <div class="fsa-grid__1/1 fsa-grid__1/2@m">
+            <h2 class="pcp-prototype-title">FSA Design System References</h2>
+            <ul>
+              <li><a href="http://usda-fsa.github.io/fsa-design-system/?preview">FSA Design System</a></li>
+              <li><a href="http://usda-fsa.github.io/fsa-design-system/elements/checkbox/">Element: Checkbox</a></li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="pcp-prototype-title">Variations / States</h2>
+        <h3>Default</h3>
+        <!-- [ START ] "src/includes/select-multi.html" -->
+        <div class="fsa-select-multi">
+          <ul class="fsa-select-multi__list">
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" data-behavior="select-multi-all" id="foo_ALL" type="checkbox" name="foo_ALL" value="ALL">
+              <label class="fsa-select-multi__label" for="foo_ALL">Select all</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_One" type="checkbox" name="foo_One" value="One" checked="">
+              <label class="fsa-select-multi__label" for="foo_One">One</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Two" type="checkbox" name="foo_Two" value="Two">
+              <label class="fsa-select-multi__label" for="foo_Two">Two</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Three" type="checkbox" name="foo_Three" value="Three" checked="">
+              <label class="fsa-select-multi__label" for="foo_Three">Three</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Four" type="checkbox" name="foo_Four" value="Four" checked="">
+              <label class="fsa-select-multi__label" for="foo_Four">Four</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Five" type="checkbox" name="foo_Five" value="Five">
+              <label class="fsa-select-multi__label" for="foo_Five">Five</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Six" type="checkbox" name="foo_Six" value="Six">
+              <label class="fsa-select-multi__label" for="foo_Six">Six</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Seven" type="checkbox" name="foo_Seven" value="Seven">
+              <label class="fsa-select-multi__label" for="foo_Seven">Seven</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Eight" type="checkbox" name="foo_Eight" value="Eight">
+              <label class="fsa-select-multi__label" for="foo_Eight">Eight</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="foo_Nine" type="checkbox" name="foo_Nine" value="Nine">
+              <label class="fsa-select-multi__label" for="foo_Nine">Nine</label>
+            </li>
+          </ul>
+        </div>
+        <!-- [  END  ] "src/includes/select-multi.html" -->
+        <h3>Disabled</h3>
+        <!-- [ START ] "src/includes/select-multi_classes--disabled.html" -->
+        <div class="fsa-select-multi fsa-select-multi--disabled">
+          <ul class="fsa-select-multi__list">
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_AAS" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_AAS" value="AAS - Medium Grain">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_AAS">ABC - Medium Grain</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_AAW" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_AAW" value="AAW - Soft White Wheat">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_AAW">AAW - Soft White Wheat</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_AZZ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_AZZ" value="AZZ - SAF">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_AZZ">AZZ - SAF</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_CSS" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_CSS" value="CSS - CAN">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_CSS">CSS - CAN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_IIO" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_IIO" value="IIO - Hard Red Spring">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_IIO">HIJ - Hard Red Spring</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_IQA" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_IQA" value="IQA - Long Grain">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_IQA">IIO - Long Grain</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_MMM" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_MMM" value="MMM - Mustard">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_MMM">LMN - Mustard</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_MQQ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_MQQ" value="MQQ - Small">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_MQQ">MQQ - Small</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_MZZ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_MZZ" value="MZZ - SUN">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_MZZ">MZZ - SUN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_PAQ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_PAQ" value="PAQ - Peas">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_PAQ">PAQ - Peas</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_POP" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_POP" value="POP - Durum">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_POP">POP - Durum</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_PXX" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_PXX" value="PXX - SFN">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_PXX">PXX - SFN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_QPP" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_QPP" value="QPP - Sorghum">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_QPP">QPP - Sorghum</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_QWE" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_QRS" value="QRS - Crambe">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_QRS">QRS - Crambe</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_QWE" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_QWE" value="QWE - Large">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_QWE">QWE - Large</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_RAD" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_RAD" value="RAD - Soft Red Winter">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_RAD">RAD - Soft Red Winter</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_TRE" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_TRE" value="TRE - Hard Red Winter">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_TRE">TRE - Hard Red Winter</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_UUU" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_UUU" value="UUU - SES">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_UUU">UUU - SES</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_VCB" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_VCB" value="VCB - Lentils">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_VCB">VCB - Lentils</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_VVV" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_VVV" value="VVV - Yellow">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_VVV">VVV - Yellow</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_WWE" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_WWE" value="WWE - RAP">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_WWE">WWE - RAP</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_XAZ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_XAZ" value="XYZ - Barley">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_XAZ">XYZ - Barley</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_XYZ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_XYZ" value="XYZ - FLX">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_XYZ">XYZ - FLX</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_XZZ" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_XZZ" value="XYZ - Oats">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_XZZ">XYZ - Oats</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input disabled="disabled" class="fsa-checkbox fsa-select-multi__check" id="commodity-class_UNIQUE-ID-eh5s_ZZP" type="checkbox" name="commodity-class_UNIQUE-ID-eh5s_ZZP" value="ZZP - Short Grain">
+              <label class="fsa-select-multi__label" for="commodity-class_UNIQUE-ID-eh5s_ZZP">ZZP - Short Grain</label>
+            </li>
+          </ul>
+        </div>
+        <!-- [  END  ] "src/includes/select-multi_classes--disabled.html" -->
+        <h2 class="pcp-prototype-title">Samples</h2>
+        <h3>Markets</h3>
+        <!-- [ START ] "src/includes/select-multi_markets.html" -->
+        <div class="fsa-select-multi">
+          <ul class="fsa-select-multi__list">
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_COL" type="checkbox" name="commodity_COL" value="COL">
+              <label class="fsa-select-multi__label" for="commodity_COL">COL - Culusa, CA</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_COR" type="checkbox" name="commodity_COR" value="COR">
+              <label class="fsa-select-multi__label" for="commodity_COR">COR - Corcoran, CA</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_EVN" type="checkbox" name="commodity_EVN" value="EVN">
+              <label class="fsa-select-multi__label" for="commodity_EVN">EVN - Evansville, IN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_FAR" type="checkbox" name="commodity_FAR" value="FAR">
+              <label class="fsa-select-multi__label" for="commodity_FAR">FAR - Fargo, ND</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_GFK" type="checkbox" name="commodity_GFK" value="GFK">
+              <label class="fsa-select-multi__label" for="commodity_GFK">GFK - Grand Forks, ND</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_GLD" type="checkbox" name="commodity_GLD" value="GLD">
+              <label class="fsa-select-multi__label" for="commodity_GLD">GLD - Goodland, KS</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_GLF" type="checkbox" name="commodity_GLF" value="GLF">
+              <label class="fsa-select-multi__label" for="commodity_GLF">GLF - Gulf of Mexico Ports, TX / LA / MS</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_GRF" type="checkbox" name="commodity_GRF" value="GRF">
+              <label class="fsa-select-multi__label" for="commodity_GRF">GRF - Great Falls, MT</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_KCM" type="checkbox" name="commodity_KCM" value="KCM">
+              <label class="fsa-select-multi__label" for="commodity_KCM">KCM - Kansas City, MO / KS</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_LOS" type="checkbox" name="commodity_LOS" value="LOS">
+              <label class="fsa-select-multi__label" for="commodity_LOS">LOS - Los Angeles, CA</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_MEM" type="checkbox" name="commodity_MEM" value="MEM">
+              <label class="fsa-select-multi__label" for="commodity_MEM">MEM - Memphis, TN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_MIN" type="checkbox" name="commodity_MIN" value="MIN">
+              <label class="fsa-select-multi__label" for="commodity_MIN">MIN - Minnesota Markets, MN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_NCD" type="checkbox" name="commodity_NCD" value="NCD">
+              <label class="fsa-select-multi__label" for="commodity_NCD">NCD - North Central Domestic, KS / MO</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_PAR" type="checkbox" name="commodity_PAR" value="PAR">
+              <label class="fsa-select-multi__label" for="commodity_PAR">PAR - Paris, TX</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_PNW" type="checkbox" name="commodity_PNW" value="PNW">
+              <label class="fsa-select-multi__label" for="commodity_PNW">PNW - Pacific Northwest Markets, OR / WA</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_RDW" type="checkbox" name="commodity_RDW" value="RDW">
+              <label class="fsa-select-multi__label" for="commodity_RDW">RDW - Red Wing, MN</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_RIC" type="checkbox" name="commodity_RIC" value="RIC">
+              <label class="fsa-select-multi__label" for="commodity_RIC">RIC - Richmond, CA</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_SCD" type="checkbox" name="commodity_SCD" value="SCD">
+              <label class="fsa-select-multi__label" for="commodity_SCD">SCD - South Central Domestic, TX / OK</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_TKO" type="checkbox" name="commodity_TKO" value="TKO">
+              <label class="fsa-select-multi__label" for="commodity_TKO">TKO - Track Origin, IL</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_TOL" type="checkbox" name="commodity_TOL" value="TOL">
+              <label class="fsa-select-multi__label" for="commodity_TOL">TOL - Toledo, OH</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_US" type="checkbox" name="commodity_US" value="US">
+              <label class="fsa-select-multi__label" for="commodity_US">US - United States</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_VEL" type="checkbox" name="commodity_VEL" value="VEL">
+              <label class="fsa-select-multi__label" for="commodity_VEL">VEL - Velva, ND</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_WCD" type="checkbox" name="commodity_WCD" value="WCD">
+              <label class="fsa-select-multi__label" for="commodity_WCD">WCD - West Coast Domestic</label>
+            </li>
+          </ul>
+        </div>
+        <!-- [  END  ] "src/includes/select-multi_markets.html" -->
+        <h3>Classes</h3>
+        <!-- [ START ] "src/includes/select-multi_classes.html" -->
+        <div class="fsa-select-multi">
+          <ul class="fsa-select-multi__list">
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_UNIQUE-ID-asfw_45182" type="checkbox" name="commodity_UNIQUE-ID-asfw_45182" value="Durum" checked="checked">
+              <label class="fsa-select-multi__label" for="commodity_UNIQUE-ID-asfw_45182">ABC - Durum</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_UNIQUE-ID-asfw_11125" type="checkbox" name="commodity_UNIQUE-ID-asfw_11125" value="Amber Durum" checked="checked">
+              <label class="fsa-select-multi__label" for="commodity_UNIQUE-ID-asfw_11125">XYZ - Amber Durum</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_UNIQUE-ID-asfw_889s6" type="checkbox" name="commodity_UNIQUE-ID-asfw_889s6" value="Soft Amber Durum">
+              <label class="fsa-select-multi__label" for="commodity_UNIQUE-ID-asfw_889s6">LMN - Soft Amber Durum</label>
+            </li>
+            <li class="fsa-select-multi__item">
+              <input class="fsa-checkbox fsa-select-multi__check" id="commodity_UNIQUE-ID-asfw_77328" type="checkbox" name="commodity_UNIQUE-ID-asfw_77328" value="Hard Amber Durum" checked="checked">
+              <label class="fsa-select-multi__label" for="commodity_UNIQUE-ID-asfw_77328">HIJ - Hard Amber Durum</label>
+            </li>
+          </ul>
+        </div>
+        <!-- [  END  ] "src/includes/select-multi_classes.html" -->
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- [ START ] "src/includes/pcp-footer-project.html" -->
+    <div class="pcp-footer-TEMP pcp-footer-TEMP--project">
+      <div class="pcp-footer-TEMP__bd">
+        <!-- (footer) -->
+      </div>
+    </div>
+    <!-- [ START ] "src/includes/prototype-list.html" -->
+    <div class="pcp-prototype-index pcp-prototype-index--docked">
+      <h1 class="pcp-prototype-index__title">Prototype Index</h1>
+      <p class="pcp-prototype-index__hints">
+        <input data-behavior="toggle-prototype-hints" class="fsa-checkbox" id="show-hints" type="checkbox" name="show-hints" value="hints">
+        <label for="show-hints" title="Use F1 key for quick toggle">Hotspot hints <code>(F1)</code></label>
+      </p>
+      <ul class="pcp-prototype-listing pcp-prototype-listing--go-home">
+        <li class="pcp-prototype-listing__u"><a href="index.html">&larr; PCP--II Prototype Home</a></li>
+      </ul>
+      <h2 class="pcp-prototype-title">Pages</h2>
+      <ul class="pcp-prototype-listing">
+        <li class="pcp-prototype-listing__u"><a href="home.html">Home</a></li>
+        <li class="pcp-prototype-listing__u"><a href="home.html?success=true">Home, Publish Complete</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow.html">Initialize new Daily Process</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery.html">Discovery</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__print.html">Discovery - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__limited.html">Discovery - Limited</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__complete.html">Discovery - Complete</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_closing.html">Closing</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping.html">Adjustments</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping__print.html">Adjustments - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping__empty-state-panel.html">Adjustments - Empty State Panel</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_review.html">Review</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_review__print.html">Review - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_publish.html">Publish</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities.html">Settings, Commodities</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets.html">Settings, Markets</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities-classes.html">Settings, Classes</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities-subclasses.html">Settings, Sub-classes</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_market-combos.html">Settings, Programs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_roles.html">Settings, Roles</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_permissions.html">Settings, Permissions</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets__add-success.html">Settings, Add [thing] - Success</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets__error.html">Settings, Add [thing] - Error</a></li>
+        <li class="pcp-prototype-listing__u"><a href="about.html">About</a>
+          <span class="fsa-label fsa-label--general">TBD</span>
+        </li>
+        <li class="pcp-prototype-listing__u"><a href="about.html">PCP Handbook</a>
+          <span class="fsa-label fsa-label--general">TBD</span>
+        </li>
+      </ul>
+      <h2 class="pcp-prototype-title">Components</h2>
+      <ul class="pcp-prototype-listing">
+        <li class="pcp-prototype-listing__u"><a href="component_adjust.html">Adjustment Table</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_card.html">Card</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_cardbar.html">Cardbar</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_content-tabs.html">Content Tabs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_field.html">Field</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_file-upload.html">File Upload</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_growl.html">Growl</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_icons.html">Icons</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_info-bar.html">Info Bar</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_mapping.html">Mapping</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_marker.html">Marker</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_modal.html">Modal</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_nav-global.html">Nav Global</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_popover.html">Popover</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_rift-detail.html">Rift Detail</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_select-multi.html">Select Multi</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_spinbox.html">Spinbox</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_stepped-tabs.html">Stepped Tabs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_stepped-control.html">Stepped Control</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_table.html">Table</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_table-header.html">Table Header</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_title-action-bar.html">Title Action Bar</a></li>
+      </ul>
+    </div>
+    <!-- [  END  ] "src/includes/prototype-list.html" -->
+    <!-- [  END  ] "src/includes/pcp-footer-project.html" -->
+  </footer>
+  <!-- [ START ] "src/includes/scripts.html" -->
+  <!-- TODO: Browserify these. Barely any priority, but super nice to have. -->
+  <!-- [ START ] "src/includes/prototype-list.html" -->
+  <div class="pcp-prototype-index pcp-prototype-index--docked">
+    <h1 class="pcp-prototype-index__title">Prototype Index</h1>
+    <p class="pcp-prototype-index__hints">
+      <input data-behavior="toggle-prototype-hints" class="fsa-checkbox" id="show-hints" type="checkbox" name="show-hints" value="hints">
+      <label for="show-hints" title="Use F1 key for quick toggle">Hotspot hints <code>(F1)</code></label>
+    </p>
+    <ul class="pcp-prototype-listing pcp-prototype-listing--go-home">
+      <li class="pcp-prototype-listing__u"><a href="index.html">&larr; PCP--II Prototype Home</a></li>
+    </ul>
+    <h2 class="pcp-prototype-title">Pages</h2>
+    <ul class="pcp-prototype-listing">
+      <li class="pcp-prototype-listing__u"><a href="home.html">Home</a></li>
+      <li class="pcp-prototype-listing__u"><a href="home.html?success=true">Home, Publish Complete</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow.html">Initialize new Daily Process</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery.html">Discovery</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__print.html">Discovery - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__limited.html">Discovery - Limited</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__complete.html">Discovery - Complete</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_closing.html">Closing</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping.html">Adjustments</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping__print.html">Adjustments - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping__empty-state-panel.html">Adjustments - Empty State Panel</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_review.html">Review</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_review__print.html">Review - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_publish.html">Publish</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities.html">Settings, Commodities</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets.html">Settings, Markets</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities-classes.html">Settings, Classes</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities-subclasses.html">Settings, Sub-classes</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_market-combos.html">Settings, Programs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_roles.html">Settings, Roles</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_permissions.html">Settings, Permissions</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets__add-success.html">Settings, Add [thing] - Success</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets__error.html">Settings, Add [thing] - Error</a></li>
+      <li class="pcp-prototype-listing__u"><a href="about.html">About</a>
+        <span class="fsa-label fsa-label--general">TBD</span>
+      </li>
+      <li class="pcp-prototype-listing__u"><a href="about.html">PCP Handbook</a>
+        <span class="fsa-label fsa-label--general">TBD</span>
+      </li>
+    </ul>
+    <h2 class="pcp-prototype-title">Components</h2>
+    <ul class="pcp-prototype-listing">
+      <li class="pcp-prototype-listing__u"><a href="component_adjust.html">Adjustment Table</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_card.html">Card</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_cardbar.html">Cardbar</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_content-tabs.html">Content Tabs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_field.html">Field</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_file-upload.html">File Upload</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_growl.html">Growl</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_icons.html">Icons</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_info-bar.html">Info Bar</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_mapping.html">Mapping</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_marker.html">Marker</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_modal.html">Modal</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_nav-global.html">Nav Global</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_popover.html">Popover</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_rift-detail.html">Rift Detail</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_select-multi.html">Select Multi</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_spinbox.html">Spinbox</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_stepped-tabs.html">Stepped Tabs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_stepped-control.html">Stepped Control</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_table.html">Table</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_table-header.html">Table Header</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_title-action-bar.html">Title Action Bar</a></li>
+    </ul>
+  </div>
+  <!-- [  END  ] "src/includes/prototype-list.html" -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/jquery-resizable.min.js"></script>
+  <script src="js/vendor/js-cookie.js"></script>
+  <script src="js/vendor/svgxuse.js"></script>
+  <script src="js/prototype.js"></script>
+  <!-- [  END  ] "src/includes/scripts.html" -->
+</body>
+</html>

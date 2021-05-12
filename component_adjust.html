@@ -1,0 +1,686 @@
+<!-- [ START ] "src/includes/html.html" -->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- [  END  ] "src/includes/html.html" -->
+<!-- [ START ] "src/includes/head.html" -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Component - Posted County Prices</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/pcp.min.css" media="all">
+  <!--[if lt IE 9]>
+  <script src="js/vendor/html5shiv.js"></script>
+  <script src="js/vendor/respond.js"></script>
+  <script src="js/vendor/selectivizr-min.js"></script>
+  <script src="js/vendor/rem.min.js"></script>
+  <![endif]-->
+</head>
+<!-- [  END  ] "src/includes/head.html" -->
+<body class="pcp-app">
+  <!-- [ START ] "src/includes/fsa-browser-upgrade.html" -->
+  <!--[if lt IE 10]><p class="fsa-browser-upgrade">You are using an <strong>outdated</strong> browser. Please <strong><a href="http://browsehappy.com/">upgrade your browser</a></strong> or contact your IT department to obtain a secure and improved experience.</p><![endif]-->
+  <!-- [  END  ] "src/includes/fsa-browser-upgrade.html" -->
+  <!-- [ START ] "src/includes/skipnav.html" --><a class="skipnav" href="#main-content">Skip to main content</a>
+  <!-- [  END  ] "src/includes/skipnav.html" -->
+  <header>
+    <!-- [ START ] "src/includes/pcp-header-project.html" -->
+    <div class="pcp-header-TEMP pcp-header-TEMP--project">
+      <div class="pcp-header-TEMP__bd">
+        <a href="index.html">PCP-II Prototype</a>
+      </div>
+    </div>
+    <!-- [  END  ] "src/includes/pcp-header-project.html" -->
+  </header>
+  <main id="main-content" tabindex="-1">
+    <div class="pcp-section">
+      <div class="pcp-section__bd">
+        <h1>Component: Adjustment Table</h1>
+        <pre class="pcp-code-block"><code>class="<strong style="color:black">pcp-adjust</strong>"</code></pre>
+        <div class="fsa-grid">
+          <div class="fsa-grid__1/1 fsa-grid__1/2@m">
+            <h2 class="pcp-prototype-title">As seen on</h2>
+            <ul>
+              <li><a href="workflow_mapping.html">Daily Process > Mapping / Adjustment</a></li>
+            </ul>
+          </div>
+          <div class="fsa-grid__1/1 fsa-grid__1/2@m">
+            <h2 class="pcp-prototype-title">FSA Design System References</h2>
+            <ul>
+              <li><a href="http://usda-fsa.github.io/fsa-design-system/elements/tables/">Tables</a></li>
+              <li><a href="http://usda-fsa.github.io/fsa-design-system/elements/text-input/">Form > Text Input</a></li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="pcp-prototype-title">Sample</h2>
+        <div class="fsa-grid">
+          <div class="fsa-grid__1 fsa-grid__1/3@m">
+            <!-- [ START ] "src/includes/pcp-adjust__terminal.html" -->
+            <div class="pcp-adjust">
+              <div class="pcp-adjust__hd">
+                <h3 class="pcp-adjust__title">Terminal Adjustments</h3>
+              </div>
+              <div class="pcp-adjust__bd">
+                <table class="pcp-adjust__table">
+                  <thead>
+                    <tr>
+                      <th colspan="4" class="pcp-adjust__th pcp-adjust__th--first" scope="col" title="Market">Mkt</th>
+                      <th colspan="4" class="pcp-adjust__th pcp-adjust__th--number" scope="col" title="Flat Price">Price</th>
+                      <th colspan="4" class="pcp-adjust__th pcp-adjust__th--number pcp-adjust__th--bisect" scope="col" title="Market Change">Chg</th>
+                      <th colspan="7" class="pcp-adjust__th pcp-adjust__th--adj" scope="col" title="Adjustment">Adjust</th>
+                      <th colspan="3" class="pcp-adjust__th pcp-adjust__th--number pcp-adjust__th--last pcp-adjust__th--adj" scope="col" title="Change">Chg</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Amarillo, TX">AMA</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">3.13</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">-0.01</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <SPAN class="HINT">
+                          <!-- [ START ] "src/includes/spinbox.html" -->
+                          <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                            <div class="pcp-spinbox__number">
+                              <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__55s5g89s5sssa" name="lorem-ipsum-amount__55s5g89s5sssa" type="number" value="-0.07" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                            </div>
+                            <div class="pcp-spinbox__actions">
+                              <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                              <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            </div>
+                          </div>
+                          <!-- [  END  ] "src/includes/spinbox.html" -->
+                        </SPAN>
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value">-0.02</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Kansas City Market">KCM</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">4.49</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">0.01</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__55s5ssgsaa" name="lorem-ipsum-amount__55s5ssgsaa" type="number" value="-1.06" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">4.63</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">0.00</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__55s5hh7jaa" name="lorem-ipsum-amount__55s5hh7jaa" type="number" value="-0.73" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Minnesota">MIN</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">4.18</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">-0.02</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__555d5d63jaa" name="lorem-ipsum-amount__555d5d63jaa" type="number" value="-0.67" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Pacific Northwest">PWN</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">4.81</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">0.00</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__sshggaai" name="lorem-ipsum-amount__sshggaai" type="number" value="-1.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Pacific Northwest">WCD</abbr></td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--number">4.84</td>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--bisect pcp-adjust__td--number">0.04</td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__ssswsgsaai" name="lorem-ipsum-amount__ssswsgsaai" type="number" value="-1.28" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pcp-adjust__ft"></div>
+            </div>
+            <!-- [  END  ] "src/includes/pcp-adjust__terminal.html" -->
+          </div>
+          <div class="fsa-grid__1 fsa-grid__1/3@m">
+            <!-- [ START ] "src/includes/pcp-adjust__state.html" -->
+            <div class="pcp-adjust">
+              <div class="pcp-adjust__hd">
+                <h3 class="pcp-adjust__title">State Adjustments</h3>
+                <span class="pcp-adjust__options">
+                  <button data-behavior="open-modal" data-target="UNIQUE-ID-772634736t" class="fsa-btn fsa-btn--small fsa-btn--flat HINT" type="button">Edit</button>
+                </span>
+              </div>
+              <div class="pcp-adjust__bd">
+                <table class="pcp-adjust__table">
+                  <thead>
+                    <tr>
+                      <th colspan="6" class="pcp-adjust__th pcp-adjust__th--first" scope="col" title="State">State</th>
+                      <th colspan="6" class="pcp-adjust__th pcp-adjust__th--bisect" scope="col" title="Market">Market</th>
+                      <th colspan="7" class="pcp-adjust__th pcp-adjust__th--adj" scope="col" title="Adjustment">Adjust</th>
+                      <th colspan="3" class="pcp-adjust__th pcp-adjust__th--number pcp-adjust__th--last pcp-adjust__th--adj" scope="col" title="Change">Chg</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Kansas">KS</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__55sefj9fa" name="lorem-ipsum-amount__55sefj9fa" type="number" value="0.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Oklahoma">OK</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__5shod21a" name="lorem-ipsum-amount__5shod21a" type="number" value="-0.03" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Colorado">CO</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__5sssthi9" name="lorem-ipsum-amount__5sssthi9" type="number" value="0.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value">-0.08</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="Nebraska">NE</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__5ss66h" name="lorem-ipsum-amount__5ss66h" type="number" value="-0.05" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="South Dakota">SD</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__5sssssh" name="lorem-ipsum-amount__5sssssh" type="number" value="0.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--first"><abbr title="California">CA</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--bisect"><abbr title="Gulf">GLF</abbr></td>
+                      <td colspan="7" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__5s553fdgsh" name="lorem-ipsum-amount__5s553fdgsh" type="number" value="0.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--number pcp-adjust__td--last pcp-adjust__td--adj">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pcp-adjust__ft"></div>
+            </div>
+            <!-- [  END  ] "src/includes/pcp-adjust__state.html" -->
+          </div>
+          <div class="fsa-grid__1 fsa-grid__1/3@m">
+            <!-- [ START ] "src/includes/pcp-adjust__protein-discounts.html" -->
+            <div class="pcp-adjust">
+              <div class="pcp-adjust__hd">
+                <h3 class="pcp-adjust__title">Premiums/Discount</h3>
+              </div>
+              <div class="pcp-adjust__bd">
+                <table class="pcp-adjust__table">
+                  <thead>
+                    <tr>
+                      <th colspan="4" class="pcp-adjust__th pcp-adjust__th--first pcp-adjust__th--bisect" scope="col" title="Market">MKT</th>
+                      <th colspan="6" class="pcp-adjust__th pcp-adjust__th--adj" scope="col">Amber</th>
+                      <th colspan="3" class="pcp-adjust__th pcp-adjust__th--number pcp-adjust__th--adj pcp-adjust__th--bisect" scope="col" title="Change">Chg</th>
+                      <th colspan="6" class="pcp-adjust__th pcp-adjust__th--adj" scope="col">Durum</th>
+                      <th colspan="3" class="pcp-adjust__th pcp-adjust__th--number pcp-adjust__th--last pcp-adjust__th--adj" scope="col" title="Change">Chg</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first pcp-adjust__td--bisect"><abbr title="Minnesota">MIN</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__gghgj4" name="lorem-ipsum-amount__gghgj4" type="number" value="-0.99" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--bisect">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__hywy55" name="lorem-ipsum-amount__hywy55" type="number" value="-1.08" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--last">
+                        <span class="pcp-adjust__change-value">-0.01</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first pcp-adjust__td--bisect"><abbr title="Pacific Northwest">PNW</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__ggtyuityuo22a" name="lorem-ipsum-amount__ggtyuityuo22a" type="number" value="-1.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--bisect">
+                        <span class="pcp-adjust__change-value">-0.01</span>
+                      </td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__wwwerqwerqwer" name="lorem-ipsum-amount__wwwerqwerqwer" type="number" value="-2.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--last">
+                        <span class="pcp-adjust__change-value">-0.01</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first pcp-adjust__td--bisect"><abbr title="laurence Olivier Solarieto">LOS</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__555ttt55663" name="lorem-ipsum-amount__555ttt55663" type="number" value="-1.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--bisect">
+                        <span class="pcp-adjust__change-value">-0.02</span>
+                      </td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__002125s66sd" name="lorem-ipsum-amount__002125s66sd" type="number" value="-1.30" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--last">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="pcp-adjust__td pcp-adjust__td--first pcp-adjust__td--bisect"><abbr title="Whatchadoin">WCD</abbr></td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__gjiyoorj7" name="lorem-ipsum-amount__gjiyoorj7" type="number" value="0.70" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--bisect">
+                        <span class="pcp-adjust__change-value"></span>
+                      </td>
+                      <td colspan="6" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--editable">
+                        <!-- [ START ] "src/includes/spinbox.html" -->
+                        <div class="pcp-spinbox pcp-spinbox--small pcp-spinbox--right pcp-adjust__spinbox">
+                          <div class="pcp-spinbox__number">
+                            <input class="fsa-input fsa-input--small pcp-spinbox__input" data-behavior="spinbox-kill-keypress spinbox-demo-change" id="lorem-ipsum-amount__8h85t5575" name="lorem-ipsum-amount__8h85t5575" type="number" value="-8.00" step="0.01" onchange="pcpDemoHighlightText('UNIQUE-ID-74851');">
+                          </div>
+                          <div class="pcp-spinbox__actions">
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--increment" type="button" data-behavior="spinbox spin--increment" data-amount="0.01" aria-label="Increase" title="Increase" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                            <button tabindex="-1" class="pcp-spinbox__btn pcp-spinbox__btn--decrement" type="button" data-behavior="spinbox spin--decrement" data-amount="0.01" aria-label="Decrease" title="Decrease" onclick="pcpDemoHighlightText('UNIQUE-ID-74851');"></button>
+                          </div>
+                        </div>
+                        <!-- [  END  ] "src/includes/spinbox.html" -->
+                      </td>
+                      <td colspan="3" class="pcp-adjust__td pcp-adjust__td--adj pcp-adjust__td--number pcp-adjust__td--last">
+                        <span class="pcp-adjust__change-value">-8.02</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pcp-adjust__ft"></div>
+            </div>
+            <!-- [  END  ] "src/includes/pcp-adjust__protein-discounts.html" -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- [ START ] "src/includes/pcp-footer-project.html" -->
+    <div class="pcp-footer-TEMP pcp-footer-TEMP--project">
+      <div class="pcp-footer-TEMP__bd">
+        <!-- (footer) -->
+      </div>
+    </div>
+    <!-- [ START ] "src/includes/prototype-list.html" -->
+    <div class="pcp-prototype-index pcp-prototype-index--docked">
+      <h1 class="pcp-prototype-index__title">Prototype Index</h1>
+      <p class="pcp-prototype-index__hints">
+        <input data-behavior="toggle-prototype-hints" class="fsa-checkbox" id="show-hints" type="checkbox" name="show-hints" value="hints">
+        <label for="show-hints" title="Use F1 key for quick toggle">Hotspot hints <code>(F1)</code></label>
+      </p>
+      <ul class="pcp-prototype-listing pcp-prototype-listing--go-home">
+        <li class="pcp-prototype-listing__u"><a href="index.html">&larr; PCP--II Prototype Home</a></li>
+      </ul>
+      <h2 class="pcp-prototype-title">Pages</h2>
+      <ul class="pcp-prototype-listing">
+        <li class="pcp-prototype-listing__u"><a href="home.html">Home</a></li>
+        <li class="pcp-prototype-listing__u"><a href="home.html?success=true">Home, Publish Complete</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow.html">Initialize new Daily Process</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery.html">Discovery</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__print.html">Discovery - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__limited.html">Discovery - Limited</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_discovery__complete.html">Discovery - Complete</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_closing.html">Closing</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping.html">Adjustments</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping__print.html">Adjustments - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_mapping__empty-state-panel.html">Adjustments - Empty State Panel</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_review.html">Review</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_review__print.html">Review - Print Preview</a></li>
+        <li class="pcp-prototype-listing__u"><a href="workflow_publish.html">Publish</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities.html">Settings, Commodities</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets.html">Settings, Markets</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities-classes.html">Settings, Classes</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_commodities-subclasses.html">Settings, Sub-classes</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_market-combos.html">Settings, Programs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_roles.html">Settings, Roles</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_permissions.html">Settings, Permissions</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets__add-success.html">Settings, Add [thing] - Success</a></li>
+        <li class="pcp-prototype-listing__u"><a href="settings_markets__error.html">Settings, Add [thing] - Error</a></li>
+        <li class="pcp-prototype-listing__u"><a href="about.html">About</a>
+          <span class="fsa-label fsa-label--general">TBD</span>
+        </li>
+        <li class="pcp-prototype-listing__u"><a href="about.html">PCP Handbook</a>
+          <span class="fsa-label fsa-label--general">TBD</span>
+        </li>
+      </ul>
+      <h2 class="pcp-prototype-title">Components</h2>
+      <ul class="pcp-prototype-listing">
+        <li class="pcp-prototype-listing__u"><a href="component_adjust.html">Adjustment Table</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_card.html">Card</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_cardbar.html">Cardbar</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_content-tabs.html">Content Tabs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_field.html">Field</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_file-upload.html">File Upload</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_growl.html">Growl</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_icons.html">Icons</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_info-bar.html">Info Bar</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_mapping.html">Mapping</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_marker.html">Marker</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_modal.html">Modal</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_nav-global.html">Nav Global</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_popover.html">Popover</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_rift-detail.html">Rift Detail</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_select-multi.html">Select Multi</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_spinbox.html">Spinbox</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_stepped-tabs.html">Stepped Tabs</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_stepped-control.html">Stepped Control</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_table.html">Table</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_table-header.html">Table Header</a></li>
+        <li class="pcp-prototype-listing__u"><a href="component_title-action-bar.html">Title Action Bar</a></li>
+      </ul>
+    </div>
+    <!-- [  END  ] "src/includes/prototype-list.html" -->
+    <!-- [  END  ] "src/includes/pcp-footer-project.html" -->
+  </footer>
+  <!-- [ START ] "src/includes/scripts.html" -->
+  <!-- TODO: Browserify these. Barely any priority, but super nice to have. -->
+  <!-- [ START ] "src/includes/prototype-list.html" -->
+  <div class="pcp-prototype-index pcp-prototype-index--docked">
+    <h1 class="pcp-prototype-index__title">Prototype Index</h1>
+    <p class="pcp-prototype-index__hints">
+      <input data-behavior="toggle-prototype-hints" class="fsa-checkbox" id="show-hints" type="checkbox" name="show-hints" value="hints">
+      <label for="show-hints" title="Use F1 key for quick toggle">Hotspot hints <code>(F1)</code></label>
+    </p>
+    <ul class="pcp-prototype-listing pcp-prototype-listing--go-home">
+      <li class="pcp-prototype-listing__u"><a href="index.html">&larr; PCP--II Prototype Home</a></li>
+    </ul>
+    <h2 class="pcp-prototype-title">Pages</h2>
+    <ul class="pcp-prototype-listing">
+      <li class="pcp-prototype-listing__u"><a href="home.html">Home</a></li>
+      <li class="pcp-prototype-listing__u"><a href="home.html?success=true">Home, Publish Complete</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow.html">Initialize new Daily Process</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery.html">Discovery</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__print.html">Discovery - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__limited.html">Discovery - Limited</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_discovery__complete.html">Discovery - Complete</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_closing.html">Closing</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping.html">Adjustments</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping__print.html">Adjustments - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_mapping__empty-state-panel.html">Adjustments - Empty State Panel</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_review.html">Review</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_review__print.html">Review - Print Preview</a></li>
+      <li class="pcp-prototype-listing__u"><a href="workflow_publish.html">Publish</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities.html">Settings, Commodities</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets.html">Settings, Markets</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities-classes.html">Settings, Classes</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_commodities-subclasses.html">Settings, Sub-classes</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_market-combos.html">Settings, Programs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_roles.html">Settings, Roles</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_permissions.html">Settings, Permissions</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets__add-success.html">Settings, Add [thing] - Success</a></li>
+      <li class="pcp-prototype-listing__u"><a href="settings_markets__error.html">Settings, Add [thing] - Error</a></li>
+      <li class="pcp-prototype-listing__u"><a href="about.html">About</a>
+        <span class="fsa-label fsa-label--general">TBD</span>
+      </li>
+      <li class="pcp-prototype-listing__u"><a href="about.html">PCP Handbook</a>
+        <span class="fsa-label fsa-label--general">TBD</span>
+      </li>
+    </ul>
+    <h2 class="pcp-prototype-title">Components</h2>
+    <ul class="pcp-prototype-listing">
+      <li class="pcp-prototype-listing__u"><a href="component_adjust.html">Adjustment Table</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_card.html">Card</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_cardbar.html">Cardbar</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_content-tabs.html">Content Tabs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_field.html">Field</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_file-upload.html">File Upload</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_growl.html">Growl</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_icons.html">Icons</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_info-bar.html">Info Bar</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_mapping.html">Mapping</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_marker.html">Marker</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_modal.html">Modal</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_nav-global.html">Nav Global</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_popover.html">Popover</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_rift-detail.html">Rift Detail</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_select-multi.html">Select Multi</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_spinbox.html">Spinbox</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_stepped-tabs.html">Stepped Tabs</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_stepped-control.html">Stepped Control</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_table.html">Table</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_table-header.html">Table Header</a></li>
+      <li class="pcp-prototype-listing__u"><a href="component_title-action-bar.html">Title Action Bar</a></li>
+    </ul>
+  </div>
+  <!-- [  END  ] "src/includes/prototype-list.html" -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/jquery-resizable.min.js"></script>
+  <script src="js/vendor/js-cookie.js"></script>
+  <script src="js/vendor/svgxuse.js"></script>
+  <script src="js/prototype.js"></script>
+  <!-- [  END  ] "src/includes/scripts.html" -->
+</body>
+</html>
